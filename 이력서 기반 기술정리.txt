@@ -1,0 +1,9 @@
+<스크래핑>
+1. Winform에서 WPF 전환의 이점
+- 윈도우의 표준 컨트롤에 의존하는 Winform과 달리 WPF는 의존하지 않기 때문에 자유로운 컨트롤 사용이 가능하다
+ex) 버튼 안에 이미지가 들어가야 한다고 했을 때 Winform은 불가능하다. 하지만 WPF는 버튼 패널 내부에 이미지 패널을 넣으면 끝난다.
+
+2. MVVM 패턴이란?
+- Model - View - ViewModel 로 이루어진 패턴
+- MVP 패턴에서 View와 Presenter 간의 의존성을 해결하기 위해 나온 패턴
+- Data Binding 을 이용해 View와 ViewModel 간의 의존성 문제를 해결한다. (한가지의 ViewModel을 여러 View에서 이용할 수 있다)
