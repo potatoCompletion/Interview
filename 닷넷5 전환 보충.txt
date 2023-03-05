@@ -1,0 +1,22 @@
+.Net 5.0의 장점으로는 한번의 개발로 윈도우, Linux, 안드로이드, iOS까지 지원을 한다는 점이다. 하나의 앱을 Windows, 안드로이드, iOS에서 동작 시킬 수 있고, 하나의 웹 사이트를 Window Server와 Linux에서 동시에 올릴 수 있으며 하나의 서비스를 Window Server와 Linux를 구분하지 않고 서비스할 수 있다는 점이다.
+
+또다른 장점으로는 전체적인 개선을 통한 성능 향상을 꼽을 수 있다. .Net이나 Java를 가리지 않고 Framework의 성능에 가장 큰 영향을 미치는 Garbage Collector의 성능이 향상되었고, 기본적인 알고리즘의 속도가 대폭 향상되었다.
+
+(참조: https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/)
+
+.Net 5.0의 단점으로는 모든 프레임 워크의 통합이라는 작업이 한 번에 완료할 수 있을 만큼 작은 작업이 아니라는 것에서 오는 것들이다. Linux용 GUI 프로그램은 아직 만들 수 없고, 전통적인 WinForm 형식의 프로그램은 여전히 Windows에서만 동작을 한다.
+
+
+
+.Net 5.0으로 전환
+
+.Net 5.0으로 전환에는 단순히 개발 프레임워크 뿐만이 아닌 개발자에게도 부담이 걸린다. .Net 5.0이 익숙한 .Net Framework가 아닌 .Net Core 기반이기 때문에 개발자가 프레임워크를 전환하는데 리소스가 소모가 된다.
+
+이렇게 장점만이 아닌 여러 단점도 존재하는 .Net 5.0인데, 전환해야 할 이유가 있다면 무엇일지 알아보자.
+
+첫째로 .Net 5.0의 발표 이후 기존의 .Net Framework는 보안 패치정도를 제외한 버전업을 중지한다. 시간이 흐르면서 구형이 되고, 최신 third party 프로그램을 사용할 수 없는 문제를 예상해 볼 수 있지만, 가장 큰 것은 성능 개선도 없다는 점일 것이다. .Net Core 3.0만해도 어느 정도의 전체적인 성능 개선이 있었으며 .Net 5.0에선 큰 차이를 보이는 성능 개선이 다수 존재한다.
+
+둘째로 Docker로 대표되는 컨테이너 기술과 클라우드가 일반화되고 각 시스템의 경계선이 흐려지면서 특정 OS나 시스템에 종속적이지 않은 방향으로 프로그램의 개발 성향이 흘러가고 있다. 이 경우 Linux와 Window 두 OS에서 동작하는 결과물을 만드는 .Net 5.0이 좋은 선택일 수 있다.
+
+셋째로 앞으로 발표되는 MS의 차세대 기술들은 기반을 .Net Framework가 아닌 .Net Core와 .Net 5.0을 기반으로 한다. MS의 차세대 웹 기술인 Blazer는 ASP.NET Core만 지원하며 Web Assembly 기술인 Blazor Web Assembly 또한 .NET Core만 현재 지원하고 있다. MS의 차세대 Application UI 기술인 .Net Multi-platform App UI-이후 MAUI-역시 .Net 6.0을 기반으로 하고 있다.
+
